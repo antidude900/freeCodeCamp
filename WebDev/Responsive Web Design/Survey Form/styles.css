@@ -1,0 +1,19 @@
+label{
+    display:block;
+}
+#name,#email,#number,#dropdown{
+    display: block; 
+    margin-bottom: 15px;
+}
+
+.recommend,.role{
+    margin:0;
+    
+}
+.improve{
+    margin-bottom:0;
+}
+
+input[type="submit"]{
+    display: block;
+}
