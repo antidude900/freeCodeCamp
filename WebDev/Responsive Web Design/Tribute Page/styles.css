@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+main{
+    background-color: silver;
+    border-radius: 9px;
+    margin:10px;
+}
+
+#title,#sub-title,#img-caption,#tribute-info h3,#tribute-link>p{
+    text-align: center;
+}
+
+#image{
+    max-width:100%; 
+    display:block;
+    height: auto;
+    margin:auto;
+
+
+}
+
+#img-div{
+    max-width:100%;
+    background-color: white;
+    margin: 20px;
+    padding:20px;
+    
+}
+
+#tribute-info{
+    padding:20px 50px;
+}
+
+#tribute-info h3{
+    margin-bottom:20px;
+}
+
+#tribute-link{
+    text-decoration:none;
+    color:blue;
+
+}
+
