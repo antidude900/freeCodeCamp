@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*:not(code){
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/*  
+
+Nav Section
+
+*/
+
+nav{
+    position: fixed;
+    width:300px;
+    height:100vh;
+    border-right: 2.5px solid #959E9E;
+}
+
+nav .nav-title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 29px;
+    padding-top: 21px;
+    padding-bottom: 21px;;
+    border-bottom:1px solid #4D4E53;
+}
+nav .contents ul li{
+    list-style: none;
+    color:#4D4E53;
+    align-items: center;
+    font-size: 16px;
+    
+}
+nav .contents ul li:not(:last-of-type){
+    border-bottom:1px solid #4D4E53;
+}
+
+a{
+    cursor:pointer;
+}
+
+nav a{
+    display: block;
+    padding:10px 30px;
+    color: inherit;
+    text-decoration: none;
+}
+
+/*  
+
+Main Section
+
+*/
+
+main{
+    margin-left:300px;
+}
+
+main .main-section{
+    padding-top:28px;
+    padding-left:37px;
+    padding-right: 22px;;
+}
+
+main .main-section .content-title{
+    color: #000;
+    font-size:29px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+main .main-section .description{
+    /* border: 2px solid blue; */
+    font-size: 15.4px;
+    color:#4D4E53;
+    margin:15px;
+}
+
+main .main-section .description p{
+
+    margin-top:15.4px;
+    margin-bottom:15.4px;
+    text-align: left;
+}
+
+main .main-section .description ul {
+    padding-left:40px;
+}
+
+
+main .main-section .description ul li{
+    list-style-position: inside;
+    margin-top:15px;
+}
+
+main .main-section .description code{
+    font-size: 12.48px;
+}
+main .main-section .description pre{
+    background-color: #f7f7f7;
+    border-radius: 9px;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+main .content .description ul li a:active{
+    color: red;
+}
+
+@media (max-width: 775px) {
+    nav{
+        display: none;
+    }
+    main{
+        margin-left: 0px;
+    }
+}
+
