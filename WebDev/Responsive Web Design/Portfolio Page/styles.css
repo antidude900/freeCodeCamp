@@ -1,0 +1,155 @@
+:root{
+    --bg:#2A2A2B;
+    --fc:#EFEFEE;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
+}
+
+body{
+    background-color: #252322;
+    color: var(--fc);
+}
+
+nav{
+    width: calc(100vw - 35px);
+    height:100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 10px -5px 20px 11px #543454;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+
+    position: fixed;
+    top:20px;
+    left:10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin:60px;
+    gap:10px;
+}
+
+.nav-cover{
+    position: fixed;
+    top:0%;
+    background:  #252322;
+    width:100vw;
+    height: 20px;
+}
+
+nav ul{
+    display: flex;
+    gap:60px;
+    margin-right: 60px;     
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    color:inherit;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    text-shadow: 1px 8px 8px silver;
+    cursor:pointer;
+    font-weight: 900;
+
+}
+
+#welcome-section{
+    height: 100vh;
+    padding: 160px 10px 40px;
+}
+
+.welcome-text{
+    display: flex;
+    background-color: var(--bg);
+    height: calc(100vh - 200px);
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 150px;
+}
+h2{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.box{
+    background-color: var(--bg);
+    border-radius: 10px;
+    margin: 0 10px 40px;
+    padding: 20px;
+}
+
+.title{ 
+    font-size:40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:30px;
+}
+
+#about p{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom:10px; 
+}
+
+.box ul,ol{
+    text-align: center;
+    list-style-position: inside;
+
+}
+.box a{
+    color:inherit;
+}
+
+.box a:hover{
+    cursor: pointer;
+    color:blue; 
+}
+
+@media (max-width:900px){
+    .logo{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    nav ul{
+        margin-right: 0;     
+    }
+
+    h1{
+        font-size: 50px;
+
+    }   
+
+}
+
